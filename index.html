@@ -3,29 +3,103 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157469963-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157469963-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-157469963-1');
-</script>
+        gtag('config', 'UA-157469963-1');
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alexander Semizhon</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
     <style>
-    h1,h2,h3{
-       
-        font-family: 'Roboto', sans-serif;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    p {
-        font-family: 'Open Sans', sans-serif;
-    }
+        html,
+        body,
+        .grid-container {
+            height: 100%;
+            margin: 0;
+            grid-gap: 28px;
+        }
+
+        .grid-container * {
+            position: relative;
+        }
+
+        .grid-container *:after {
+            /*content: attr(class);*/
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "photo photo Name Name Name Name"
+                "photo photo position position position position"
+                "photo photo CV CV Email Email"
+                "Blog Blog Blog socials socials socials"
+
+        }
+.job {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        .photo {
+            grid-area: photo;
+        }
+
+        .Name {
+            grid-area: Name;
+        }
+
+        .position {
+            grid-area: position;
+        }
+
+        .CV {
+            grid-area: CV;
+        }
+
+        .Email {
+            grid-area: Email;
+        }
+
+        .Blog {
+            grid-area: Blog;
+        }
+
+        .socials {
+            grid-area: socials;
+        }
+
+
+
+        h1,
+        h2,
+        h3,
+        a,
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h2, a {
+            font-size: 20px;
+        }
+
         html,
         h1,
         h2,
@@ -36,56 +110,71 @@
         }
 
         body {
-            margin: 60px;
-            padding: 60px;
+            margin: 20px;
             background-color: #fff;
         }
 
-        h1,p{
+        h1,
+        p {
             text-align: center;
-            margin-top:15px;
+            margin-top: 15px;
             color: #444;
         }
 
         .job {
+            min-height: 76px;
             transition: all 3s ease-in-out;
-            height: 76px;
             border-radius: 24px;
             margin: 0;
-            margin-top: 28px;
-            padding: 16px;
             background-color: #fff;
             box-shadow: 2px 6px 16px rgba(135, 135, 135, 0.15), -4px -2px 16px rgba(255, 255, 255, .65);
             overflow: hidden;
         }
-
+.heyyou {
+    text-align: center;
+    justify-self: center;
+}
         a {
             color: #444;
+        }
+
+        .job img {
+            max-height: 100%;
+        }
+
+        .job:hover {
+            background-color: rgb(236, 236, 236);
+            box-shadow: 2px 6px 16px rgba(70, 70, 70, 0.15), -4px -2px 16px rgba(194, 194, 194, 0.65);
         }
     </style>
 </head>
 
 <body>
-    <div class="job">
-        <h1>Hey there,</h1>
-    </div>
-    <div class="job">
-        <h1>I'm Alex Semizhon</h1>
 
-    </div>
 
-    <div class="job">
-        <p><a href="mailto:alex@semizhon.com">alex@semizhon.com</a></p>
+    <div class="grid-container">
+        <div class="photo job">
+            <img src="images/alex.jpeg" alt="none">
+        </div>
+        <div class="Name job">
+            <h1 class="heyyou">Alexander Semizhon</h1>
+        </div>
+        <div class="position job">
+            <h2 class="heyyou">There's A Lot Of Ideas And All's Mine</h2>
+        </div>
+        <div class="CV job">
+            <a class="heyyou" href="cv.html">CV</a>
+        </div>
+        <div class="Email job">
+            <a class="heyyou" href="mailto:alex@semizhon.com">alex@semizhon.com</a></p>
+        </div>
+        <div class="Blog job">
+            <a class="heyyou" href="blog.html">Blog (coming soon)</a>
+        </div>
+        <div class="socials job">
+            <a class="heyyou" href="cv.html">Social Area</a>
+        </div>
     </div>
-
-    <div class="job">
-        <p><a href="cv.html">CV</a></p>
-    </div>
-
-    <div class="job">
-        <p><a href="blog.html">Blog</a></p>
-    </div>
-
 
 
 </body>

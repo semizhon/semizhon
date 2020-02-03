@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157469963-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-157469963-1');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alexander Semizhon</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <style>
+    h1,h2,h3{
+       
+        font-family: 'Roboto', sans-serif;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+    }
+        html,
+        h1,
+        h2,
+        h3,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: 60px;
+            padding: 60px;
+            background-color: #fff;
+        }
+
+        h1,p{
+            text-align: center;
+            margin-top:15px;
+            color: #444;
+        }
+
+        .job {
+            width: 30%;
+            transition: all 3s ease-in-out;
+            height: 76px;
+            border-radius: 24px;
+            margin: 0;
+            margin-top: 28px;
+            padding: 16px;
+            background-color: #fff;
+            box-shadow: 2px 6px 16px rgba(135, 135, 135, 0.15), -4px -2px 16px rgba(255, 255, 255, .65);
+            overflow: hidden;
+        }
+
+        a {
+            color: #444;
+        }
+    .job img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="job">
+        <img src="images/alex.jpeg" alt="none">
+    </div>
+    <div class="job">
+        <h1>I'm Alex Semizhon</h1>
+
+    </div>
+
+    <div class="job">
+        <p><a href="mailto:alex@semizhon.com">alex@semizhon.com</a></p>
+    </div>
+
+    <div class="job">
+        <p><a href="cv.html">CV</a></p>
+    </div>
+
+    <div class="job">
+        <p><a href="blog.html">Blog</a></p>
+    </div>
+
+
+
+</body>
+
+</html>
