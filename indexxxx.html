@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157469963-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157469963-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Semizhon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            box-sizing: border-box;
+        }
+
+        html,
+        body,
+        .grid-container {
+            height: 100%;
+            margin: 0;
+            grid-gap: 30px;
+        }
+
+        .grid-container * {
+            position: relative;
+        }
+
+        .grid-container *:after {
+            /*content: attr(class);*/
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: "photo photo Name Name Name Name"
+                "photo photo position position position position"
+                "photo photo CV CV Email Email"
+                "Blog Blog Blog socials socials socials"
+
+        }
+.job {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        .photo {
+            grid-area: photo;
+        }
+
+        .Name {
+            grid-area: Name;
+        }
+
+        .position {
+            grid-area: position;
+        }
+
+        .CV {
+            grid-area: CV;
+        }
+
+        .Email {
+            grid-area: Email;
+        }
+
+        .Blog {
+            grid-area: Blog;
+        }
+
+        .socials {
+            grid-area: socials;
+        }
+
+
+
+        h1,
+        h2,
+        h3,
+        a,
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h2, a {
+            font-size: 20px;
+        }
+
+        html,
+        h1,
+        h2,
+        h3,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        h1,
+        p {
+            text-align: center;
+            margin-top: 15px;
+            color: #444;
+        }
+
+        .job {
+            min-height: 76px;
+            transition: all .2s ease-in-out;
+            border-radius: 24px;
+            margin: 0;
+            background-color: rgb(245, 245, 245);
+           /*  box-shadow: 18px 18px 30px #D1D9e6, -18px -18px 30px #FFF; */
+           box-shadow: inset 18px 18px 48px rgb(255, 255, 255), inset -18px -18px 48px #FFF; 
+            overflow: hidden;
+        }
+.heyyou {
+    text-align: center;
+    justify-self: center;
+    width: 100%;
+    line-height: 1000%;
+}
+        a {
+            color: #444;
+        }
+
+        .job img {
+            max-height: 100%;
+        }
+
+        .job:hover {
+            background-color: rgb(245, 245, 245);
+            box-shadow: 12px 12px 24px rgb(238, 238, 238), -12px -12px 24px #FFF;
+        }
+
+    #gearbox {
+z-index: 2;
+    position: fixed;
+    top: 50px;
+    left: 1250px;
+    display:flex;
+    justify-content: space-between;
+}
+#leftgear, #rightgear {
+    width: 50px;
+    font-size: 50px; 
+    height: 50px;
+}
+    </style>
+
+
+</head>
+
+<body>
+    <div id="gearbox">
+        <div id="leftgear">🦠</div>
+        <div>semizhon</div>
+    </div>
+
+    <div></div>
+
+    <script>
+    let leftgear = document.getElementById("leftgear");
+    window.addEventListener("scroll", function() {
+    leftgear.style.transform = "rotate("+window.pageYOffset+"deg)";
+});
+    </script>
+
+    <div class="grid-container">
+        <div class="photo job">
+            <img src="images/photo_2020-02-04 23.13.35.jpeg" alt="none">
+        </div>
+        <div class="Name job">
+            <h1 class="heyyou">Alexander Semizhon</h1>
+        </div>
+        <div class="position job">
+            <h2 class="heyyou">
+                Transforming Ideas Into A Reality
+            </h2>
+        </div>
+        <div class="CV job">
+            <a class="heyyou" href="cv.html">CV</a>
+        </div>
+        <div class="Email job">
+            <a class="heyyou" href="mailto:alex@semizhon.com">alex@semizhon.com</a></p>
+        </div>
+        <div class="Blog job">
+            <a class="heyyou" href="blog.html">News</a>
+        </div>
+        <div class="socials job">
+            <a class="heyyou" href="cv.html">S.</a>
+        </div>
+    </div>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+<p>hello</p>
+</body>
+
+</html>
