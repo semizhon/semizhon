@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Александр Семижон
+N;CHARSET=UTF-8:Семижон;Александр;;;
+GENDER:M
+BDAY:19930817
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:alex@semizhon.com
+EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:alexander.semizhon@gmail.com
+TEL;TYPE=WORK,VOICE:+79259033922
+ADR;CHARSET=UTF-8;TYPE=WORK:;;Ivana Franko\, 8;Moscow;Moscow;208291;Russia
+TITLE;CHARSET=UTF-8:Territory Sales Executive
+ORG;CHARSET=UTF-8:Autodesk
+URL;type=WORK;CHARSET=UTF-8:autodesk.ru
+REV:2020-09-02T07:50:39.739Z
+END:VCARD
