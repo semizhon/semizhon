@@ -1,14 +1,18 @@
-BEGIN:VCARD
-VERSION:3.0
-FN;CHARSET=UTF-8:Александр Семижон
-N;CHARSET=UTF-8:Семижон;Александр;;;
-GENDER:M
-BDAY:19930817
-EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:alex@semizhon.com
-EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:alexander.semizhon@autodesk.com
-TEL;TYPE=WORK,VOICE:+79259033922
-ADR;CHARSET=UTF-8;TYPE=WORK:;;Ivana Franko\, 8;Moscow;Moscow;208291;Russia
-TITLE;CHARSET=UTF-8:Territory Sales Executive
-ORG;CHARSET=UTF-8:Autodesk
-REV:2020-09-02T07:50:39.739Z
-END:VCARD
+begin:vcard
+version:3.0
+prodid:Microsoft-MacOutlook/16.41.20091302
+UID:920ECE57-3BED-487A-9978-B99ABC0700CE
+X-MICROSOFT-EXCHANGE-ID:AAMkAGJiODVlN2JjLWRmMzctNDgwZS05YWNmLWQ3NWYxMjYzNmVmNwBGAAAAAAC9Cuha0LExSYT8YaC12z9JBwBZnnewfPFjQpYYnLpVe7DBAAAAAAEOAABZnnewfPFjQpYYnLpVe7DBAAJqaUD2AAA=
+fn;charset=utf-8:Александр Семижон
+n;charset=utf-8:Семижон;Александр;;;
+title;charset=utf-8:Менеджер по работе с ключевыми клиентами
+org;charset=utf-8:Autodesk;Цифровое производство
+note;charset=utf-8: 
+url;charset=utf-8;type=work:autodesk.ru
+adr;charset=utf-8;type=work;type=pref:;;Ивана Франко\, 8\, 17 этаж;Москва;;121108;Россия
+label;charset=utf-8;type=work;type=pref:Ивана Франко\, 8\, 17 этаж\nМосква\n121108\nРоссия
+tel;charset=utf-8;type=work:+74955453551
+tel;charset=utf-8;type=cell:+79259033922
+email;charset=utf-8;type=internet;type=pref;type=work:alexander.semizhon@autodesk.com
+email;charset=utf-8;type=internet;type=home:alex@semizhon.com
+end:vcard
