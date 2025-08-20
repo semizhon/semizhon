@@ -77,6 +77,32 @@ body {
 		bottom: 0;
 		background: #000000;
 	}
+	
+	/* Force black background for Dynamic Island area */
+	body::before {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: env(safe-area-inset-top);
+		background: #000000;
+		z-index: 9999;
+	}
+	
+	/* Additional Dynamic Island specific fix */
+	body::after {
+		content: '';
+		position: fixed;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 126px;
+		height: 37px;
+		background: #000000;
+		border-radius: 0 0 20px 20px;
+		z-index: 10000;
+	}
 }
 
 .container {
