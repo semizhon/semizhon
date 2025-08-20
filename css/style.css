@@ -5,6 +5,7 @@ body {
 	min-height: 100vh;
 	width: 100vw;
 	position: relative;
+	background: #000000;
 	background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
 	color: #ffffff;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -18,21 +19,54 @@ body {
 	padding: 0;
 }
 
-html, body {
+html {
 	margin: 0;
 	padding: 0;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	background: #000000;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
 	overflow-x: hidden;
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: transparent;
+	background: #000000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 /* Safari iOS specific fixes */
 @supports (-webkit-touch-callout: none) {
-	html, body {
+	html {
 		margin: 0;
 		padding: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow-x: hidden;
+		background: #000000;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	body {
+		margin: 0;
+		padding: 20px;
+		padding-top: calc(20px + env(safe-area-inset-top));
+		padding-bottom: calc(20px + env(safe-area-inset-bottom));
+		padding-left: calc(20px + env(safe-area-inset-left));
+		padding-right: calc(20px + env(safe-area-inset-right));
 		width: 100vw;
 		height: 100vh;
 		overflow-x: hidden;
@@ -41,10 +75,7 @@ html, body {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		padding-top: env(safe-area-inset-top);
-		padding-bottom: env(safe-area-inset-bottom);
-		padding-left: env(safe-area-inset-left);
-		padding-right: env(safe-area-inset-right);
+		background: #000000;
 	}
 }
 
@@ -112,9 +143,27 @@ a:hover {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-	html, body {
+	html {
 		margin: 0;
 		padding: 0;
+		width: 100vw;
+		height: 100vh;
+		overflow-x: hidden;
+		background: #000000;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	
+	body {
+		margin: 0;
+		padding: 15px;
+		padding-top: calc(15px + env(safe-area-inset-top));
+		padding-bottom: calc(15px + env(safe-area-inset-bottom));
+		padding-left: calc(15px + env(safe-area-inset-left));
+		padding-right: calc(15px + env(safe-area-inset-right));
 		width: 100vw;
 		height: 100vh;
 		overflow-x: hidden;
@@ -123,10 +172,7 @@ a:hover {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		padding-top: env(safe-area-inset-top);
-		padding-bottom: env(safe-area-inset-bottom);
-		padding-left: env(safe-area-inset-left);
-		padding-right: env(safe-area-inset-right);
+		background: #000000;
 	}
 	
 	body {
