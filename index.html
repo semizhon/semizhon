@@ -8,7 +8,16 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-4ZKP2MM0YV');
+  gtag('config', 'G-4ZKP2MM0YV', {
+    'send_page_view': false
+  });
+  
+  // Defer page view until after page load
+  window.addEventListener('load', function() {
+    gtag('config', 'G-4ZKP2MM0YV', {
+      'send_page_view': true
+    });
+  });
 </script>
     <meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -24,7 +33,7 @@
 
         <div class="links">
             <a href="mailto:alex@semizhon.com">email</a>
-            <a href="http://t.me/semizhon">telegram</a>
+            <a href="https://t.me/semizhon">telegram</a>
             <a href="https://instagram.com/xdrsemi">instagram</a>
             <a href="https://www.facebook.com/alexander.semizhon">facebook</a>
             <a href="https://www.linkedin.com/in/semizhon/">linkedIn</a>
