@@ -159,12 +159,13 @@ a:hover {
 }
 
 .copyright {
-	position: absolute;
+	position: fixed;
 	bottom: 20px;
 	left: 20px;
 	color: #888888;
 	opacity: 0.8;
 	font-size: 0.9rem;
+	z-index: 1000;
 }
 
 /* Mobile Responsive */
@@ -216,8 +217,8 @@ a:hover {
 	}
 	
 	.copyright {
-		bottom: 15px;
-		left: 15px;
+		bottom: calc(15px + env(safe-area-inset-bottom));
+		left: calc(15px + env(safe-area-inset-left));
 		font-size: 0.8rem;
 	}
 }
@@ -238,5 +239,11 @@ a:hover {
 	.links a {
 		margin: 5px;
 		padding: 8px 12px;
+	}
+	
+	.copyright {
+		bottom: calc(10px + env(safe-area-inset-bottom));
+		left: calc(10px + env(safe-area-inset-left));
+		font-size: 0.75rem;
 	}
 }
